@@ -1,0 +1,32 @@
+button{
+    /* 기본 스타일 제거하고 파란 배경에 둥글게 이쁜 버튼 스타일 */
+    border: none;
+    background-color: #199d17;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#wrapper{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.cat{
+    width:100%;
+    top: 300px;
+}
+
+#wrapper > button {
+    z-index: 100;
+    position: absolute; 
+    top: 85%;
+    left: 70%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}

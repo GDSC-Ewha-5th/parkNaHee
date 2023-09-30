@@ -1,0 +1,21 @@
+body{
+    background: black;
+}
+
+* {
+    color: white;
+}
+
+h1{
+    color: red;
+}
+
+#title{
+    color: blue;
+}
+#title:hover{
+    color: rgb(255, 0, 149);
+}
+.title_sub{
+    color: yellow;
+}
