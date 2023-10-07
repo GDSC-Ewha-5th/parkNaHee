@@ -1,0 +1,3 @@
+# ignore all .vscode file and node_modules
+.vscode
+node_modules
