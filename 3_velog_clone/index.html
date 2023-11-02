@@ -17,6 +17,8 @@
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- 모듈 형식으로 Import하는 방식을 사용할 수도 있어요. -->
+    <script src="./src/main.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -29,9 +31,7 @@
           <button class="navbar-search clickable">
             <span class="material-icons">search</span>
           </button>
-          <a href="write.html">
-            <button class="navbar-button clickable hide-on-mobile">새 글 작성</button>
-          </a>
+          <a href="write.html" class="navbar-button clickable hide-on-mobile">새 글 작성</a>
           <button class="navbar-profile clickable">
             <img alt="벨로그 썸네일" src="./resources/profile.jpg" alt="profile" />
             <span class="material-icons">arrow_drop_down</span>
@@ -45,10 +45,22 @@
           <span class="material-icons"> trending_up </span>트렌딩
         </a>
         <a class="nav-button clickable"> <span class="material-icons"> schedule </span>최신 </a>
-        <a class="nav-dropdown clickable">
+        <!-- <a class="nav-dropdown clickable">
           이번 주
           <span class="material-icons">arrow_drop_down</span>
-        </a>
+        </a> -->
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-button clickable">
+            <span class="dropdown-display">오늘</span>
+            <span class="material-icons">arrow_drop_down</span>
+          </button>
+          <div class="nav-dropdown-content">
+            <button>오늘</button>
+            <button>이번 주</button>
+            <button>이번 달</button>
+            <button>올해</button>
+          </div>
+        </div>
       </div>
       <span class="material-icons clickable"> more_vert </span>
     </nav>
