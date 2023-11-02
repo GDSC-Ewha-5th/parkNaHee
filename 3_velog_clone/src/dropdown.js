@@ -37,7 +37,7 @@ export function setNavDropdown() {
   function setSelect() {
     for (const node of nodes) {
       const containers = node.getElementsByClassName('nav-dropdown-content');
-      console.log('containers', containers);
+
       for (const container of containers) {
         // idx를 받으면 해당 idx에 해당하는 항목을 선택하는 함수
         function select(idx) {
@@ -60,7 +60,7 @@ export function setNavDropdown() {
           const thisIdx = cnt;
           child.addEventListener('click', () => {
             // 기존에 동적으로 추가한 toggleDropdown을 false로 바꿈으로써 토글 닫음
-            node.toggleDropdown(true);
+            node.toggleDropdown(false);
 
             // 클릭한 인덱스를 select함수에 넘김
             select(thisIdx);
