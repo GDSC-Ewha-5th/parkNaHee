@@ -7,7 +7,7 @@ export function setNavDropdown() {
     for (const node of nodes) {
       //   nav-dropdown내부의 버튼 요소들만 전부 가져온다
       const btns = node.getElementsByClassName('nav-dropdown-button');
-
+w
       //   버튼요소를 클릭했을 때 state 상태에 따라 "dropdown-open" 클래스 제어 (이걸로 드롭다운 메뉴 표시 여부 판단하므로)
       const toggle = function (state = null) {
         const dropdownContents = node.getElementsByClassName('nav-dropdown-content');
